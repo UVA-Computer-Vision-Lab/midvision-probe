@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="We propose learning 3D representations from procedurally generated shapes, matching state-of-the-art models trained on semantic data. Our approach highlights SSL's strength in capturing geometric structure over high-level semantics in 3D tasks.">
+  <meta name="keywords" content="Self-Supervised Learning, 3D Representation Learning, Procedural 3D Programs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probing the Mid-level Vision Capabilities of Self-Supervised Learning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Probing the Mid-level Vision Capabilities of Self-Supervised Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <div class="is-size-5 publication-authors">
+              <a href="https://xuweiyichen.github.io/" class="author-block" style="margin-right: 20px; text-decoration: none; position: relative;">
+                <span>Xuweiyi Chen</span>
+                <sup style="position: absolute; top: -5px; right: -5px; font-size: 0.8em;">1</sup>
+              </a>
+              <a href="https://damaggu.github.io/" class="author-block" style="margin-right: 20px; text-decoration: none; position: relative;">
+                <span>Markus Marks</span>
+                <sup style="position: absolute; top: -5px; right: -8px; font-size: 0.8em;">2</sup>
+              </a>
+              <a href="https://sites.google.com/site/zezhoucheng/" class="author-block" style="text-decoration: none; position: relative;">
+                <span>Zezhou Cheng</span>
+                <sup style="position: absolute; top: -5px; right: -5px; font-size: 0.8em;">1</sup>
+              </a>
+            </div>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="position: relative; margin-right: 20px;">
+              <sup style="position: absolute; top: -5px; left: -10px; font-size: 0.8em;">1</sup>
+              University of Virginia
+            </span>
+            <span class="author-block" style="position: relative;">
+              <sup style="position: absolute; top: -5px; left: -10px; font-size: 0.8em;">2</sup>
+              California Institute of Technology
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      &#129303; 
+                  </span>
+                  <span>CheckPoints</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Mid-level vision capabilities --- such as generic object localization and 3D geometric understanding --- are not only fundamental to human vision but are also crucial for many real-world applications of computer vision.
+These abilities emerge with minimal supervision during the early stages of human visual development. 
+Despite their significance, current self-supervised learning (SSL) approaches are primarily designed and evaluated for high-level recognition tasks, leaving their mid-level vision capabilities largely unexamined. 
+
+In this study, we introduce a suite of benchmark protocols to systematically assess mid-level vision capabilities and present a comprehensive, controlled evaluation of 22 prominent SSL models across 8 mid-level vision tasks.
+Our experiments reveal a weak correlation between mid-level and high-level task performance. 
+We also identify several SSL methods with highly imbalanced performance across mid-level and high-level capabilities, as well as some that excel in both. 
+Additionally, we investigate key factors contributing to mid-level vision performance, such as pretraining objectives and network architectures.
+Our study provides a holistic and timely view of what SSL models have learned, complementing existing research that primarily focuses on high-level vision tasks.
+We hope our findings guide future SSL research to benchmark models not only on high-level vision tasks but on mid-level as well.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+      <figure>
+        <img src="static/images/teaser-v2.jpg" alt="Mid-Level Vision vs. High-Level Vision Tasks" style="margin-left: 200px; width: 60%; display: inline-block;">
+        <figcaption>
+          <div class="content">
+            <p><strong>Mid-Level Vision vs. High-Level Vision Tasks.</strong> 
+            We provide a comprehensive evaluation of prominent self-supervised learning methods (SSLs) across a wide range of mid-level vision tasks (a), complementing the standard evaluation in high-level vision tasks (b). Although SSL performance in mid-level vision tasks (e.g., depth estimation) is positively correlated with ImageNet linear probing (c, left), this correlation is much weaker than that observed among high-level vision tasks (e.g., Caltech-256 vs. ImageNet classification) (c, right), as indicated by the <code>R<sup>2</sup></code> statistics.</p>
+          </div>
+        </figcaption>
+      </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Mid-Level Vision <em>v.s.</em> ImageNet Linear Probing.</h2>
+    <div class="content has-text-justified">
+      <p>High-level vision performance, as measured by ImageNet (IN1k) probing, shows a positive correlation with mid-level vision tasks. This suggests that self-supervised learning (SSL) models excelling in high-level tasks often generate representations that benefit spatial and structural mid-level tasks.</p>
+
+      <p><strong>Task-Specific Highlights:</strong></p>
+      <ul>
+        <li><strong>Generic Object Segmentation:</strong> The strongest correlation with high-level tasks (<code>R<sup>2</sup> = 0.70</code>), indicating high-level features effectively capture spatial structures.</li>
+        <li><strong>Mid-Level Image Similarity:</strong> Also highly correlated, showing that high-level representations retain invariance to mid-level variations like viewpoint changes.</li>
+      </ul>
+      
+      <p>These insights reveal a nuanced relationship between high-level and mid-level vision capabilities, with varying degrees of task-specific correlation.</p>
+      <figure>
+        <img src="./static/images/imagenet_vs_probing_plots.jpg" alt="Point-MAE-Zero Pipeline">
+        <figcaption>
+          <div class="content">
+            <p><strong>Mid-Level Vision <em>v.s.</em> ImageNet Linear Probing.</strong> 
+            We report the performance of self-supervised learning methods on mid-level vision tasks (y-axis) against their ImageNet 1K linear classification accuracy. Metrics are detailed in paper. Linear regression shows correlation with <code>R<sup>2</sup></code> in each plot's top-left corner, and the red shaded area marks the 95% confidence interval.</p>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre><code>
+  </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/sled-group/multi-object-hallucination" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
+            under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
