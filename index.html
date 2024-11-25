@@ -97,6 +97,14 @@
   </div>
 </section>
 
+<section class="tldr-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h2 class="title is-4">TL;DR: <span style="font-size: 1.1rem; font-weight: normal;">We benchmark 22 SSL models across 8 mid-level vision tasks, showing that strong performance on high-level tasks does not necessarily translate to strong mid-level vision capabilities. we hope our findings guide future SSL research to benchmark models not only on high-level vision tasks but on mid-level as well.</span></h2>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -154,7 +162,7 @@ We hope our findings guide future SSL research to benchmark models not only on h
         <img src="./static/images/imagenet_vs_probing_plots.jpg" alt="Point-MAE-Zero Pipeline">
         <figcaption>
           <div class="content">
-            <p><strong>Mid-Level Vision <em>v.s.</em> ImageNet Linear Probing.</strong> 
+            <p><strong>Figure 1. Mid-Level Vision <em>v.s.</em> ImageNet Linear Probing.</strong> 
             We report the performance of self-supervised learning methods on mid-level vision tasks (y-axis) against their ImageNet 1K linear classification accuracy. Metrics are detailed in paper. Linear regression shows correlation with <code>R<sup>2</sup></code> in each plot's top-left corner, and the red shaded area marks the 95% confidence interval.</p>
           </div>
         </figcaption>
@@ -163,6 +171,71 @@ We hope our findings guide future SSL research to benchmark models not only on h
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Does Strong High-Level Performance Imply Strong Mid-Level Performance?</h2>
+    <div class="content has-text-justified">
+      <p>
+        High-level performance often translates to better mid-level vision task performance, as shown in Figure 1 above. SSL models with strong high-level capabilities tend to offer better representations for mid-level tasks, leveraging spatial and structural information.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Correlation Between Tasks</h2>
+    <div class="content has-text-justified">
+      <p>
+        Mid-level tasks such as object segmentation correlate highly with high-level tasks (\(R^2 = 0.70\)), indicating that spatial structures are well captured. Similarly, mid-level image similarity benefits from high-level invariance to variations. However, 3D geometric tasks like surface normal estimation show weaker correlations, as they require finer geometric cues not emphasized in high-level SSL objectives.
+      </p>
+      <p>
+        We observe with Figure 2 that Object segmentation strongly correlates with mid-level image similarity and depth estimation, highlighting the importance of spatial understanding. However, scene geometry correspondence shows weaker relationships with other tasks, emphasizing its unique requirements.
+      </p>
+      <figure>
+        <img src="./static/images/correlation.jpg" alt="Task Correlation">
+        <figcaption>
+          <p>Figure 2. Correlation coefficients across mid-level vision tasks.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Ranking of SSL Models</h2>
+    <div class="content has-text-justified">
+      <p>
+        Figure 3. compares SSL models based on mid-level and high-level performance. Some models excel in high-level tasks but lag in mid-level capabilities. MaskFeat stands out with exceptional mid-level performance, while MAE struggles with finer details. iBOT and DINO rank among the top performers, while earlier methods like RotNet and Jigsaw fall behind.
+      </p>
+      <figure>
+        <img src="./static/images/ranking.jpg" alt="Model Ranking">
+        <figcaption>
+          <p>Figure 3. SSL model ranking based on mid-level and high-level tasks.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Additional Visualizations</h2>
+    <p>
+      We present qualitative visualizations below to assess model performance on mid-level vision tasks. These visualizations validate the models' ability to learn and perform each mid level vision task effectively.
+    </p>
+    <div class="content has-text-centered">
+      <!-- Button-like links to PDFs -->
+      <a href="./static/images/depth_visualization.pdf" target="_blank" class="button is-primary">
+        View Depth Visualization
+      </a>
+      <a href="./static/images/snorm_visualization.pdf" target="_blank" class="button is-link">
+        View Surface Normal Visualization
+      </a>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
