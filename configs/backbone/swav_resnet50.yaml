@@ -1,0 +1,6 @@
+_target_: evals.models.swav.SWAV
+arch: resnet50
+output: dense
+return_layers: [1, 2, 3, 4]
+add_norm: true
+return_cls: false

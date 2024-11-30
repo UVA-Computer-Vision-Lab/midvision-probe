@@ -1,0 +1,10 @@
+random_seed: 8
+scale_factor: 0.25
+num_corr: 1000
+multilayer: False
+wandb_use: True
+defaults:
+  - backbone: dinov2_b14
+  - _self_
+output_dir: /p/openvocabdustr/probing_midlevel_vision/code/probing-mid-level-vision/result/correspondance
+model_name: dinov2_b14

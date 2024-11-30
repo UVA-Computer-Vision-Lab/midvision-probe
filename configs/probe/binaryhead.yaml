@@ -1,0 +1,6 @@
+_target_: evals.models.probes.BinaryHead
+head_type: dpt
+feat_dim: 128
+kernel_size: 3
+output_dim: 1
+pred_type: sigmoid

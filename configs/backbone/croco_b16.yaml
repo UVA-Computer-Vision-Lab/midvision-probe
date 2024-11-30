@@ -1,0 +1,6 @@
+_target_: evals.models.croco.CROCO
+output: dense
+model_name: vitb16
+layer: -1
+add_norm: true
+return_cls: false

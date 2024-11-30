@@ -1,0 +1,21 @@
+system:
+  random_seed: 8
+  num_gpus: 1
+  port: 12355
+note: ""
+batch_size: 16
+wandb:
+  use: True
+defaults:
+  - optimizer: ten_epoch
+  - backbone: dinov2_b14
+  - dataset: voc
+  - probe: binaryhead
+  - _self_
+experiment_name: SSL_Objectness_Probing
+experiment_model: dinov2_b14
+is_eval: False
+ckpt_path: ""
+output_dir: "result"
+num_workers: 1
+model_name: "dinov2_b14"

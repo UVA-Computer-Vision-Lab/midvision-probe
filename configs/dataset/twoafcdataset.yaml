@@ -1,0 +1,5 @@
+_target_: evals.datasets.twoafcdataset.TwoAFCDataset
+root_dir: /p/openvocabdustr/probing_midlevel_vision/data/nights
+split: train
+load_size: 224
+name: TwoAFCDataset

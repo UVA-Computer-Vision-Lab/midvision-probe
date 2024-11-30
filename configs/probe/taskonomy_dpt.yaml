@@ -1,0 +1,7 @@
+_target_: evals.models.probes.TaskonomyHead
+uncertainty_aware: True
+head_type: dpt
+feat_dim: 512
+kernel_size: 3
+output_dim: 3
+pred_type: vanilla

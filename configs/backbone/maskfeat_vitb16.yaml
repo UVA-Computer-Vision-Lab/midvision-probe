@@ -1,0 +1,5 @@
+_target_: evals.models.maskfeat.MASKFEAT
+model_name: vitb16
+output: dense-cls
+add_norm: true
+return_cls: false

@@ -1,0 +1,10 @@
+_target_: evals.datasets.voc.VOC
+trainval_path: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2007_trainval/VOCdevkit/VOC2007/SegmentationObject
+test_path: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2007_test/VOCdevkit/VOC2007/SegmentationObject
+trainval_jpeg_dir: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2007_trainval/VOCdevkit/VOC2007/JPEGImages
+test_jpeg_dir: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2007_test/VOCdevkit/VOC2007/JPEGImages
+trainval_xml_dir: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2007_trainval/VOCdevkit/VOC2007/Annotations
+test_xml_dir: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2007_test/VOCdevkit/VOC2007/Annotations
+image_mean: imagenet
+fixed_size: 480  # Size to which images are resize
+name: voc

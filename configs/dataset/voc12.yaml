@@ -1,0 +1,7 @@
+_target_: evals.datasets.voc.VOC
+trainval_path: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2012_trainval/VOCdevkit/VOC2012/SegmentationObject
+trainval_jpeg_dir: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2012_trainval/VOCdevkit/VOC2012/JPEGImages
+trainval_xml_dir: /p/openvocabdustr/probing_midlevel_vision/data/VOCdevkit/VOC2012_trainval/VOCdevkit/VOC2012/Annotations
+image_mean: imagenet
+fixed_size: 480  # Size to which images are resize
+name: voc12

@@ -1,0 +1,6 @@
+_target_: evals.models.beit_v2.BEiTV2
+model_name: vitb16
+output: dense
+layer: -1
+add_norm: true
+return_cls: false

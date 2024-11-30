@@ -1,0 +1,17 @@
+system:
+  random_seed: 8
+  num_gpus: 1
+  port: 12355
+note: ""
+batch_size: 32
+wandb:
+  use: True
+defaults:
+  - optimizer: ten_epoch
+  - backbone: dinov2_b14
+  - dataset: taskonomy
+  - probe: taskonomy_dpt
+  - _self_
+experiment_name: SSL_Taskonomy_Probing
+experiment_model: dinov2_b14
+ckpt_path: /p/openvocabdustr/probing_midlevel_vision/code/probing-mid-level-vision/depth_exps/15092024-1550_\$beit_v2\$_vitb16_dense-cls_2-5-8-11_16_2-5-8-11_dense-cls_snorm_dpt_k3_UA_8_10_1.50_0.0005_0.0_32_taskonomy_edge_occlusion_mini_train_taskonomy_edge_occlusion_mini_test/ckpt.pth

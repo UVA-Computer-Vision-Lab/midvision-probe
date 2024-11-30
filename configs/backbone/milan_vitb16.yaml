@@ -1,0 +1,6 @@
+_target_: evals.models.milan.MILAN
+model_name: vitb16
+output: dense-cls
+layer: -1
+add_norm: true
+return_cls: false

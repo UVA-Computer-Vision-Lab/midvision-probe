@@ -1,0 +1,28 @@
+default_language_version:
+  python: python3
+
+repos:
+  - repo: local
+    hooks:
+      - id: jupyter-nb-clear-output
+        name: jupyter-nb-clear-output
+        files: \.ipynb$
+        stages: [commit]
+        language: system
+        entry: jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+      - id: check-ast
+      - id: check-merge-conflict
+
+  - repo: local
+    hooks:
+      - id: check-file-size
+        name: Check file size under 10 MB
+        entry: |
+          bash -c 'FILES=$(git ls-files -z | xargs -0 -I{} find "{}" -type f -size +10M) && if [ -n "$FILES" ]; then echo "$FILES"; echo "Error: Files larger than 10MB found!"; exit 1; else exit 0; fi'
+        language: system
+        pass_filenames: false
+        always_run: true

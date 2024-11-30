@@ -1,0 +1,6 @@
+_target_: evals.models.mae.MAE
+checkpoint: "facebook/vit-mae-large"
+output: dense
+layer: -1
+add_norm: true
+return_cls: false

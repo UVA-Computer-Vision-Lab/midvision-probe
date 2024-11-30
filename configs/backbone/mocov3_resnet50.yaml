@@ -1,0 +1,6 @@
+_target_: evals.models.mocov3_res50.MoCoV3_RES
+arch: resnet50
+output: dense-cls
+return_layers: [1, 2, 3, 4]
+add_norm: true
+return_cls: false

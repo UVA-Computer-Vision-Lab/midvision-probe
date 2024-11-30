@@ -1,0 +1,6 @@
+_target_: evals.datasets.navi.NAVI
+path: /p/openvocabdustr/probing_midlevel_vision/code/probing-mid-level-vision/data/navi_v1
+image_mean: imagenet
+augment_train: True
+bbox_crop: True
+name: navi

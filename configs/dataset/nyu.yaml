@@ -1,0 +1,7 @@
+_target_: evals.datasets.nyu.NYU
+train_path: /p/openvocabdustr/probing_midlevel_vision/code/probing-mid-level-vision/data/nyu_geonet_hf_datasets_v2
+test_path: /p/openvocabdustr/probing_midlevel_vision/code/probing-mid-level-vision/data/nyuv2_test_processed
+image_mean: imagenet
+augment_train: True
+center_crop: True
+name: nyuv2

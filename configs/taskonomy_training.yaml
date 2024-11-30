@@ -1,0 +1,19 @@
+system:
+  random_seed: 8
+  num_gpus: 2
+  port: 12355
+note: ""
+batch_size: 16
+wandb:
+  use: True
+defaults:
+  - optimizer: fifteen_epoch
+  - backbone: dinov2_b14
+  - dataset: taskonomy
+  - probe: taskonomy_dpt
+  - _self_
+experiment_name: SSL_Taskonomy_Probing
+experiment_model: dinov2_b14
+is_eval: false
+ckpt_path: ""
+output_dir: "result"
