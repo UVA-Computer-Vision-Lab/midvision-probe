@@ -20,6 +20,37 @@ If you find this code useful, please consider citing:
 ```
 **:warning: Note:** This is a cleanup version. Further edits and refinements are in progress. This note will be removed once the content has been finalized.
 
+
+Model Checkpoints
+-----------------
+
+Model Checkpoints
+-----------------
+
+| **Model Name**       | **Backbone**         | **Dataset**    | **Source Link**                                                                                   |
+|-----------------------|----------------------|----------------|---------------------------------------------------------------------------------------------------|
+| Jigsaw               | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| RotNet               | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| NPID                 | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| SeLa-v2              | ResNet-50           | ImageNet-1K    | [SwAV repository](https://github.com/facebookresearch/swav)                                       |
+| NPID++               | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| PIRL                 | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| ClusterFit           | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| DeepCluster-v2       | ResNet-50           | ImageNet-1K    | [SwAV repository](https://github.com/facebookresearch/swav)                                       |
+| SwAV                 | ResNet-50           | ImageNet-1K    | [SwAV repository](https://github.com/facebookresearch/swav)                                       |
+| SimCLR               | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
+| MoCo v2              | ResNet-50           | ImageNet-1K    | [MoCo v2 repository](https://github.com/facebookresearch/moco)                                   |
+| SimSiam              | ResNet-50           | ImageNet-1K    | [MMSelfSup model zoo](https://mmselfsup.readthedocs.io/en/dev-1.x/model_zoo.html)                |
+| BYOL                 | ResNet-50           | ImageNet-1K    | [Unofficial BYOL repo](https://github.com/yaox12/BYOL-PyTorch)                                   |
+| Barlow Twins         | ResNet-50           | ImageNet-1K    | [MMSelfSup model zoo](https://mmselfsup.readthedocs.io/en/dev-1.x/model_zoo.html)                |
+| DenseCL              | ResNet-50           | ImageNet-1K    | [DenseCL repository](https://github.com/WXinlong/DenseCL)                                        |
+| DINO                 | ResNet-50/ViT-B/16  | ImageNet-1K    | [DINO repository](https://github.com/facebookresearch/dino)                                      |
+| MoCo v3              | ResNet-50/ViT-B/16  | ImageNet-1K    | [MoCo v3 repository](https://github.com/facebookresearch/moco-v3)                                |
+| iBOT                 | ViT-B/16            | ImageNet-1K    | [iBOT repository](https://github.com/bytedance/ibot)                                             |
+| MAE                  | ViT-B/16            | ImageNet-1K    | [MAE repository](https://github.com/facebookresearch/mae)                                       |
+| MaskFeat             | ViT-B/16            | ImageNet-1K    | [MMSelfSup model zoo](https://mmselfsup.readthedocs.io/en/dev-1.x/model_zoo.html)                |
+
+
 Environment Setup
 -----------------
 
