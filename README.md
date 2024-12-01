@@ -24,9 +24,6 @@ If you find this code useful, please consider citing:
 Model Checkpoints
 -----------------
 
-Model Checkpoints
------------------
-
 | **Model Name**       | **Backbone**         | **Dataset**    | **Source Link**                                                                                   |
 |-----------------------|----------------------|----------------|---------------------------------------------------------------------------------------------------|
 | Jigsaw               | ResNet-50           | ImageNet-1K    | [VISSL model zoo](https://github.com/facebookresearch/vissl/blob/main/MODEL_ZOO.md)              |
